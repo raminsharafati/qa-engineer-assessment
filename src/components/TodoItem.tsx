@@ -62,3 +62,4 @@ export const TodoItem: FC<TodoItemProps> = ({
     </Wrapper>
   );
 };
+// Update some parts to fully work with my automation
