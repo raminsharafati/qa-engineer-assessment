@@ -44,13 +44,19 @@ export const TodoItem: FC<TodoItemProps> = ({
   checked = false,
   onChange,
 }) => {
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (onChange) {
+      onChange(e.target.checked);
+    }
+  };
+
   return (
     <Wrapper>
       <Checkbox
         type="checkbox"
         id={id}
         checked={checked}
-        onChange={(e) => onChange(e.target.checked)}
+        onChange={handleCheckboxChange}
       />
       <Label checked={checked}>{label}</Label>
     </Wrapper>
