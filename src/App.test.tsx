@@ -203,7 +203,7 @@ test('Checked items does not sink to the bottom of the list automatically becaus
   // Same count check after interactions
   expect(listItems).toHaveLength(3);
 
-  // VThis confirms reboot computer at the bottom
+  // This confirms reboot computer at the bottom
   expect(listItems[0]).toHaveTextContent('Test 1');
   expect(listItems[1]).toHaveTextContent('Test 2');
   expect(listItems[2]).toHaveTextContent('Test 3');
